@@ -1,5 +1,8 @@
 # SaveMyMind
 
+<img width="1309" height="477" alt="immagine" src="https://github.com/user-attachments/assets/86568911-0e5d-4252-a3f6-368a8038dfd4" />
+
+
 A single-file local tool to keep track of how you triaged a vulnerability, so you don't have to work it out again next time.
 
 Anyone using OWASP Dependency-Check, Qualys, Trivy or similar knows the problem. You dig into a finding, decide it's a false positive (or that it's real, or that you're accepting the risk for now), then a month later the same CVE turns up on another project. You start over, because that decision got scattered across tickets and suppression files, or lost. SaveMyMind is where you write it down once and get it back in a second.
