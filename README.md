@@ -1,5 +1,8 @@
 # SaveMyMind
 
+<img width="1272" height="859" alt="627667834-44058ce2-ff25-4c3f-94f2-3ba619714116" src="https://github.com/user-attachments/assets/47dd33bb-832f-40b3-8114-30786bd7bfa6" />
+
+
 A single-file local tool to keep track of how you triaged a vulnerability, so you don't have to work it out again next time.
 
 Anyone using OWASP Dependency-Check, Qualys, Trivy or similar knows the problem. You dig into a finding, decide it's a false positive (or that it's real, or that you're accepting the risk for now), then a month later the same CVE turns up on another project. You start over, because that decision got scattered across tickets and suppression files, or lost. SaveMyMind is where you write it down once and get it back in a second.
@@ -23,9 +26,6 @@ python savemymind.py
 First run creates savemymind.db next to the script, starts a small local server, opens the page at http://127.0.0.1:8765. Ctrl+C stops it, the data stays. There are --port, --no-browser and --db path options if you need them. No pip install, no Docker, no account. The whole interface lives inside the script.
 
 One thing about persistence, since it trips people up. The server runs only while the script runs, but the database is a plain file that doesn't disappear. Reboot, come back next week, run the script again, everything is there. To back up, copy savemymind.db while the app is stopped (SQLite in WAL mode keeps recent writes in the -wal and -shm side files), or use the Export button.
-
-<img width="176" height="29" alt="immagine" src="https://github.com/user-attachments/assets/e7b487eb-ab57-45c2-ab2c-d99e85e9e43a" />
-<img width="1272" height="859" alt="immagine" src="https://github.com/user-attachments/assets/44058ce2-ff25-4c3f-94f2-3ba619714116" />
 
 
 ## What you can do with it
