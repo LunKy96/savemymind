@@ -24,6 +24,7 @@ First run creates savemymind.db next to the script, starts a small local server,
 
 One thing about persistence, since it trips people up. The server runs only while the script runs, but the database is a plain file that doesn't disappear. Reboot, come back next week, run the script again, everything is there. To back up, copy savemymind.db while the app is stopped (SQLite in WAL mode keeps recent writes in the -wal and -shm side files), or use the Export button.
 
+<img width="176" height="29" alt="immagine" src="https://github.com/user-attachments/assets/e7b487eb-ab57-45c2-ab2c-d99e85e9e43a" />
 <img width="1272" height="859" alt="immagine" src="https://github.com/user-attachments/assets/44058ce2-ff25-4c3f-94f2-3ba619714116" />
 
 
